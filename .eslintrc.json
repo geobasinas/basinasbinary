@@ -1,11 +1,13 @@
 {
-   "extends": ["next/core-web-vitals", "next/typescript"],
+  "extends": ["next/core-web-vitals", "next/typescript"],
   "overrides": [
     {
       "files": ["components/ui/**/*"],
       "rules": {
-        // Disable all rules for files in the /components/ui directory
-        "all": "off"
+        "all": "off",
+        "@typescript-eslint/no-unused-vars": "off",
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/explicit-module-boundary-types": "off"
       }
     }
   ]
